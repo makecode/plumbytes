@@ -1,0 +1,35 @@
+.issue
+  margin-bottom: 20px
+
+  &__bottom
+    margin-top: 24px
+
+  &__title
+    display: block
+    margin-bottom: 10px
+    text-transform: uppercase
+    font-size: 11px
+    color: $textBlack
+    +h700
+
+  &__list
+
+    &.is-good
+
+      .issue__el
+        color: $textGreen
+
+    &.is-bad
+
+      .issue__el
+        color: $textRed
+
+  &__el
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 5px
+    font-size: 14px
+
+    .ico
+      margin-right: 5px

@@ -1,0 +1,62 @@
+//variables
+$textBlack: #424242
+$textBlue: #1e88e5
+$bgGrey: #f5f5f5
+$bgGreyDark: #808080
+$bgRed: #f0382b
+$textRed: #fb4437
+$textGreen: #39b517
+
++font("opensans-bold", opensans-bold)
++font("opensans-regular", opensans-regular)
+
+=h400
+	font-family: "opensans-regular", Helvetica, Arial, sans-serif
+
+=h700
+	font-family: "opensans-bold", Helvetica, Arial, sans-serif
+
+html
+	height: 100%
+
+body
+	font-family: Arial, sans-serif
+	font-size: 13px
+	line-height: 1.4
+	color: $textBlack
+	min-height: 100%
+	display: flex
+	flex-direction: column
+	+h400
+
+a
+	transition: all .3s ease-in-out
+	text-decoration: none
+	cursor: pointer
+
+h1
+	font-size: 30px
+	letter-spacing: -.9px
+	+h700
+
+img
+	display: block
+	max-width: 100%
+
+.i-bold
+	+h700
+
+.subtitle
+	margin-top: 12px
+	font-size: 14px
+	line-height: 22px
+
+.logo
+	display: flex
+	align-items: center
+
+	&__name
+		padding-left: 10px
+		font-size: 24px
+		color: $textBlack
+		letter-spacing: -.9px

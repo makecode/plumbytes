@@ -1,0 +1,30 @@
+.rating
+  margin-top: 30px
+  margin-bottom: 27px
+  padding: 16px 31px 16px 20px
+  background-color: $bgGrey
+  display: flex
+  justify-content: space-between
+  letter-spacing: .5px
+
+  &__status
+    margin-top: 7px
+    text-transform: uppercase
+    font-size: 20px
+    letter-spacing: -.9px
+    +h700
+
+  span
+    display: flex
+
+  &.is-poor
+    background-color: $bgRed
+    color: white
+    
+    .progress
+      
+      &__el
+        background-color: #D83227
+
+        &.is-active
+          background-color: #FFF

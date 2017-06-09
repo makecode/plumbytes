@@ -1,0 +1,78 @@
+.language-wrap
+  padding: 0 30px
+  position: relative
+  width: 108px
+  height: 36px
+  cursor: pointer
+
+  &::after,
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    display: inline-block
+    z-index: 11
+
+  &::after
+    left: 10px
+    width: 14px
+    height: 14px
+    background-image: url('../img/earth.png')
+
+  &::before
+    right: 10px
+    width: 8px
+    height: 5px
+    background-image: url('../img/ico-arrow-down.png')
+
+.language
+  position: absolute
+  top: 0
+  right: 0
+  display: inline-flex
+  flex-direction: column
+  width: 108px
+  height: 35px
+  line-height: 35px
+  overflow: hidden
+  z-index: 10
+  border: 1px solid #B0B0B0
+
+  &.is-open
+    height: auto
+
+  &__el
+    background-color: #FFFFFF
+    padding-left: 30px
+    display: flex
+    flex: 1
+    order: 2
+    min-height: 35px
+    transition: color .3s ease-in-out
+
+    &.is-active
+      order: 1
+      border-bottom: 1px solid #B0B0B0
+
+      &:hover
+
+        .language__link
+          color: $textBlack
+
+    &:hover
+
+      .language__link
+        color: $textBlue
+
+  &__link
+    color: $textBlack
+
+
+  &__ico
+    position: absolute
+    top: 10px
+    left: 10px
+
+    &.is-arrow
+      right: 10px

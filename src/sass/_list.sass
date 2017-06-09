@@ -1,0 +1,31 @@
+.list
+
+  &.is-horizontal
+    display: flex
+
+    .list
+
+      &__el
+        position: relative
+        padding-left: 19px
+
+        &:after
+          position: absolute
+          top: 8px
+          left: 9px
+          content: ''
+          width: 2px
+          height: 2px
+          background-color: white
+
+        &:first-child
+          padding-left: 0
+
+          &:after
+            display: none
+
+      &__link
+        color: white
+
+        &:hover
+          text-decoration: underline
